@@ -18,7 +18,7 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${manropeSans.variable} h-full antialiased`}
     >
-      <body>
+      <body className="margin-body">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

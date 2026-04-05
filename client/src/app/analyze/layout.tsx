@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Logo from "@/components/shared/Logo";
 
 export const metadata: Metadata = {
     title: "Analyze Your Job Fit | GapFinder",
@@ -26,6 +27,8 @@ export default function AnalyzeLayout({
 }>) {
     return (
         <>
+            {/* Logo component */}
+            <Logo />
             {children}
         </>
     );

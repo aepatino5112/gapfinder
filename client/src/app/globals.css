@@ -211,4 +211,8 @@
   .security-text {
     @apply text-muted-foreground font-bold text-xs leading-5 tracking-normal md:text-base;
   }
+
+  .margin-body {
+    @apply mx-6 my-8 md:mx-14;
+  }
 }

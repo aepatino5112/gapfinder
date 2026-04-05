@@ -176,4 +176,39 @@
   html {
     @apply font-sans
   }
+
+  h1 {
+    @apply text-foreground font-bold text-2xl leading-7 tracking-normal md:text-5xl md:leading-20;
+  }
+
+  h4 {
+    @apply text-foreground text-2xl font-bold leading-12 tracking-normal md:leading-8 md:text-3xl;
+  }
+
+  h5 {
+    @apply text-foreground font-bold text-base leading-6 tracking-normal md:text-2xl md:leading-10;
+  }
+
+  h6 {
+    @apply text-foreground text-xl font-bold md:text-2xl tracking-normal md:leading-9;
+  }
+
+  p {
+    @apply text-foreground text-base font-regular leading-4 tracking-normal md:font-medium md:text-xl md:leading-8;
+  }
+}
+
+@layer components {
+
+  .text-helper {
+    @apply text-muted-foreground font-regular text-xs leading-3 tracking-normal md:text-base md:leading-6;
+  }
+
+  .job-description {
+    @apply text-muted-foreground font-regular text-base md:leading-6;
+  }
+
+  .security-text {
+    @apply text-muted-foreground font-bold text-xs leading-5 tracking-normal md:text-base;
+  }
 }

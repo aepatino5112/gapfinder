@@ -194,18 +194,18 @@
   }
 
   p {
-    @apply text-foreground text-base font-regular leading-4 tracking-normal md:font-medium md:text-xl md:leading-8;
+    @apply text-foreground text-base font-normal leading-4 tracking-normal md:font-medium md:text-xl md:leading-8;
   }
 }
 
 @layer components {
 
   .text-helper {
-    @apply text-muted-foreground font-regular text-xs leading-3 tracking-normal md:text-base md:leading-6;
+    @apply text-muted-foreground font-normal text-xs leading-3 tracking-normal md:text-base md:leading-6;
   }
 
   .job-description {
-    @apply text-muted-foreground font-regular text-base md:leading-6;
+    @apply text-muted-foreground font-normal text-base md:leading-6;
   }
 
   .security-text {

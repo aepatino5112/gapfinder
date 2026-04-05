@@ -194,7 +194,7 @@
   }
 
   p {
-    @apply text-foreground text-base font-normal leading-4 tracking-normal md:font-medium md:text-xl md:leading-8;
+    @apply text-foreground text-lg font-normal leading-4 tracking-normal md:font-medium md:leading-8;
   }
 }
 

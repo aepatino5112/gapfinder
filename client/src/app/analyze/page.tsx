@@ -1,8 +1,13 @@
+"use client";
 import { ArrowUpFromLine, Shield } from "lucide-react";
 import Btn from "@/components/shared/Button";
 import TextArea from "@/components/shared/TextArea";
+import {useState} from "react";
 
 const Analyze = () => {
+
+    // State for the job description input
+    const [description, setDescription] = useState<string>("");
 
     return (
         <main className="pb-26 md:pb-0">
@@ -36,6 +41,8 @@ const Analyze = () => {
                     {/* Input for job description (ShadCN's Textarea) */}
                     <TextArea
                         placeholder="Paste the job description here..."
+                        value={description}
+                        onChange={setDescription}
                     />
 
                 </div>

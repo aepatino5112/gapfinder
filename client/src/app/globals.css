@@ -215,7 +215,7 @@
   }
 
   .security-text {
-    @apply text-foreground font-bold text-xs leading-5 tracking-normal md:text-base;
+    @apply text-muted-foreground font-normal text-xs leading-5 tracking-normal md:text-base;
   }
 
   .margin-body {

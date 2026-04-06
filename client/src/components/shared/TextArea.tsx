@@ -7,7 +7,7 @@ const TextArea = ({ placeholder }: TextAreaProps) => {
         <div className="flex flex-col mx-6 md:mr-6 min-h-80">
             <Textarea
                 placeholder={placeholder}
-                className="flex-1 resize-none overflow-y-auto job-description h-full w-full"
+                className="flex-1 resize-none overflow-y-auto job-description h-full w-full dark:border-border"
             />
         </div>
     );

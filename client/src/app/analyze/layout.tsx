@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Logo from "@/components/shared/Logo";
+import ThemeToggle from "@/components/shared/ThemeToggle";
 
 export const metadata: Metadata = {
     title: "Analyze Your Job Fit | GapFinder",
@@ -27,9 +28,11 @@ export default function AnalyzeLayout({
 }>) {
     return (
         <>
-            {/* Logo component */}
             <Logo />
             {children}
+            <div className="fixed bottom-8 right-6 md:bottom-12 md:right-12 z-50">
+                <ThemeToggle />
+            </div>
         </>
     );
 }

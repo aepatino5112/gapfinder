@@ -1,12 +1,11 @@
-import ThemeToggle from "@/components/shared/ThemeToggle";
-import { ArrowUpFromLine } from "lucide-react";
+import { ArrowUpFromLine, Shield } from "lucide-react";
 import Btn from "@/components/shared/Button";
 import TextArea from "@/components/shared/TextArea";
 
 const Analyze = () => {
 
     return (
-        <main>
+        <main className="pb-26 md:pb-0">
             {/* Main Heading & description */}
             <h4 className="pb-4 mt-8 md:mt-0">Analyze Your Job Fit</h4>
             <div className="max-w-4xl text-left">
@@ -26,7 +25,10 @@ const Analyze = () => {
                         <h6 className="hidden md:block text-center">Drag & Drop your resume</h6>
                         <h6 className="block md:hidden text-center">Search for your resume</h6>
                         <p className="text-helper mt-4 mb-2">.PDF only (max. 2MB)</p>
-                        <Btn text="Browse Files" />
+                        <Btn
+                            text="Browse Files"
+                            type="browse"
+                        />
                         <p className="text-helper mt-2">or click to browse</p>
 
                     </div>
@@ -39,8 +41,18 @@ const Analyze = () => {
                 </div>
 
                 {/* CTA button */}
+                <div className="mx-6">
+                    <Btn
+                        text="Analyze My Fit"
+                        type="submit"
+                    />
+                </div>
 
                 {/* Disclaimer about resume storage */}
+                <div className="flex justify-center items-center gap-2 mx-6 mt-6 mb-4">
+                    <Shield className="text-muted-foreground w-6 h-6" />
+                    <p className="security-text">Your resume is processed securely and never stored</p>
+                </div>
             </div>
         </main>
     );

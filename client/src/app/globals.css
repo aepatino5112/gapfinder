@@ -215,10 +215,24 @@
   }
 
   .security-text {
-    @apply text-muted-foreground font-normal text-xs leading-5 tracking-normal md:text-base;
+    @apply text-muted-foreground font-normal leading-5 tracking-normal text-base;
   }
 
   .margin-body {
     @apply mx-6 my-8 md:mx-14;
+  }
+}
+
+.path-draw {
+  stroke-dasharray: 1;
+  animation: draw-line 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes draw-line {
+  0% {
+    stroke-dashoffset: -1;
+  }
+  100% {
+    stroke-dashoffset: 0;
   }
 }

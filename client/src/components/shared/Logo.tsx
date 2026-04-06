@@ -8,7 +8,7 @@ const Logo = () => {
             {/* Light theme logo */}
             <Link href="/">
                 <Image
-                    src="./logo.svg"
+                    src="/logo.svg"
                     width={224}
                     height={48}
                     className="block w-46 h-auto md:w-56 dark:hidden"
@@ -19,7 +19,7 @@ const Logo = () => {
             {/* Dark theme logo */}
             <Link href="/">
                 <Image
-                    src="dark-logo.svg"
+                    src="/dark-logo.svg"
                     width={224}
                     height={48}
                     className="hidden w-46 h-auto md:w-56 dark:block"

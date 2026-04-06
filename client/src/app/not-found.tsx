@@ -1,6 +1,7 @@
 import Logo from "@/components/shared/Logo";
+import { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
     title: "404 - Not Found | GapFinder",
     description: "Oops! The page you are looking for does not exist or has been moved.",
     robots: {

@@ -109,7 +109,7 @@ const Analyze = () => {
                 {/* Disclaimer about resume storage */}
                 <div className="flex justify-center items-center gap-2 mx-6 mt-6 mb-4">
                     <Shield className="text-muted-foreground w-6 h-6" />
-                    <p className="security-text">Your resume is processed securely and never stored</p>
+                    <p className="security-text">Your resume is never stored</p>
                 </div>
             </div>
         </main>

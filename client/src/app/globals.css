@@ -211,11 +211,11 @@
   }
 
   .job-description {
-    @apply text-muted-foreground font-normal text-base md:leading-6;
+    @apply text-foreground font-normal text-base md:leading-6;
   }
 
   .security-text {
-    @apply text-muted-foreground font-bold text-xs leading-5 tracking-normal md:text-base;
+    @apply text-foreground font-bold text-xs leading-5 tracking-normal md:text-base;
   }
 
   .margin-body {

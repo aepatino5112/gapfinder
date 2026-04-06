@@ -1,4 +1,6 @@
 import ThemeToggle from "@/components/shared/ThemeToggle";
+import { ArrowUpFromLine } from "lucide-react";
+import Btn from "@/components/shared/Button";
 
 const Analyze = () => {
 
@@ -12,14 +14,26 @@ const Analyze = () => {
             </div>
 
             {/* Main wrapper */}
-            <div className="my-8">
+            <div className="my-8 flex flex-col justify-center items-center border border-border w-full mx-auto rounded-md">
 
                 {/* Inputs container */}
-                <div>
+                <div className="my-6 grid grid-cols-1 gap-6 md:grid-cols-2">
 
                     {/* Input for resume */}
+                    <div className="p-20 flex flex-col justify-center items-center border-2 border-border border-dashed rounded-md mx-6 md:ml-6">
+                        <ArrowUpFromLine className="text-primary w-16 h-16 mb-6" />
+                        <h6 className="hidden md:block text-center">Drag & Drop your resume</h6>
+                        <h6 className="block md:hidden text-center">Search for your resume</h6>
+                        <p className="text-helper mt-4 mb-2">.PDF only (max. 2MB)</p>
+                        <Btn text="Browse Files" />
+                        <p className="text-helper mt-2">or click to browse</p>
 
-                    {/* Input for job description */}
+                    </div>
+
+                    {/* Input for job description (ShadCN's Textarea) */}
+                    <div>
+
+                    </div>
 
                 </div>
 

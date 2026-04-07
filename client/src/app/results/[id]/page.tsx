@@ -1,14 +1,10 @@
 import { Metadata } from "next";
-
-interface ResultsPageProps {
-    params: Promise<{
-        id: string;
-    }>;
-}
+import {ResultsPageProps} from "@/types/results";
+import ResultsButtons from "@/components/results/ResultsButtons";
 
 export const generateMetadata = async ({ params }: ResultsPageProps): Promise<Metadata> => {
 
-    // Solving the promise
+    // Solving the promise for the params
     const resolvedParams = await params;
 
     return {
@@ -21,20 +17,25 @@ export const generateMetadata = async ({ params }: ResultsPageProps): Promise<Me
     };
 };
 
-const ResultsPage = async ({ params }: ResultsPageProps) => {
 
-    // Simulación de carga para que puedas ver la animación del loading.tsx
-    // (Borra esto cuando ya conectes tu IA real)
-    await new Promise((resolve) => setTimeout(resolve, 10000));
+const ResultsPage = () => {
 
     return (
-        <main className="margin-body flex flex-col items-center justify-center h-[calc(100vh-8rem)]">
-            <h1 className="text-4xl font-bold text-foreground">
-                Roadmap Ready!
-            </h1>
-            <p className="text-muted-foreground mt-4 text-xl">
-                Displaying analysis for ID: <span className="font-mono text-primary">{(await params).id}</span>
-            </p>
+        <main>
+
+            {/* Main heading & buttons for sharing */}
+            <div className="mt-8 flex flex-col md:flex-row md:justify-between items-start md:items-center gap-4 md:gap-0">
+                <h4>Skill Analysis</h4>
+
+                {/* Shareable Buttons */}
+                <ResultsButtons />
+            </div>
+
+            {/* Match score & summarized description */}
+
+            {/* Wrapper for the skills */}
+
+            {/* Wrapper for the roadmap */}
         </main>
     );
 };
